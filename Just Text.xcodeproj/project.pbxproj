@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C87A46B6276FC627003928DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A46B5276FC627003928DA /* AppDelegate.swift */; };
-		C87A46B8276FC629003928DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C87A46B7276FC629003928DA /* Assets.xcassets */; };
-		C87A46BB276FC629003928DA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C87A46B9276FC629003928DA /* MainMenu.xib */; };
+		C8262C7A2785122800491CBE /* Markdown Tool.app in Resources */ = {isa = PBXBuildFile; fileRef = C8262C792785122800491CBE /* Markdown Tool.app */; };
+		C87A46D1276FF02E003928DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C87A46CC276FF02E003928DA /* Assets.xcassets */; };
+		C87A46D2276FF02E003928DA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C87A46CD276FF02E003928DA /* MainMenu.xib */; };
+		C87A46D3276FF02E003928DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A46D0276FF02E003928DA /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C87A46B2276FC627003928DA /* UI Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C87A46B5276FC627003928DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C87A46B7276FC629003928DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C87A46BA276FC629003928DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		C87A46BC276FC629003928DA /* UI_Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UI_Test.entitlements; sourceTree = "<group>"; };
+		C8262C792785122800491CBE /* Markdown Tool.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = "Markdown Tool.app"; sourceTree = "<group>"; };
+		C87A46B2276FC627003928DA /* JustText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C87A46CC276FF02E003928DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C87A46CE276FF02E003928DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C87A46CF276FF02E003928DA /* JustText.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = JustText.entitlements; sourceTree = "<group>"; };
+		C87A46D0276FF02E003928DA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +36,7 @@
 		C87A46A9276FC627003928DA = {
 			isa = PBXGroup;
 			children = (
-				C87A46B4276FC627003928DA /* UI Test */,
+				C87A46CB276FF02E003928DA /* JustText */,
 				C87A46B3276FC627003928DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -42,28 +44,29 @@
 		C87A46B3276FC627003928DA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C87A46B2276FC627003928DA /* UI Test.app */,
+				C87A46B2276FC627003928DA /* JustText.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C87A46B4276FC627003928DA /* UI Test */ = {
+		C87A46CB276FF02E003928DA /* JustText */ = {
 			isa = PBXGroup;
 			children = (
-				C87A46B5276FC627003928DA /* AppDelegate.swift */,
-				C87A46B7276FC629003928DA /* Assets.xcassets */,
-				C87A46B9276FC629003928DA /* MainMenu.xib */,
-				C87A46BC276FC629003928DA /* UI_Test.entitlements */,
+				C87A46CC276FF02E003928DA /* Assets.xcassets */,
+				C87A46CD276FF02E003928DA /* MainMenu.xib */,
+				C87A46CF276FF02E003928DA /* JustText.entitlements */,
+				C87A46D0276FF02E003928DA /* AppDelegate.swift */,
+				C8262C792785122800491CBE /* Markdown Tool.app */,
 			);
-			path = "UI Test";
+			path = JustText;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C87A46B1276FC627003928DA /* UI Test */ = {
+		C87A46B1276FC627003928DA /* JustText */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C87A46BF276FC629003928DA /* Build configuration list for PBXNativeTarget "UI Test" */;
+			buildConfigurationList = C87A46BF276FC629003928DA /* Build configuration list for PBXNativeTarget "JustText" */;
 			buildPhases = (
 				C87A46AE276FC627003928DA /* Sources */,
 				C87A46AF276FC627003928DA /* Frameworks */,
@@ -73,9 +76,9 @@
 			);
 			dependencies = (
 			);
-			name = "UI Test";
+			name = JustText;
 			productName = "UI Test";
-			productReference = C87A46B2276FC627003928DA /* UI Test.app */;
+			productReference = C87A46B2276FC627003928DA /* JustText.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -93,7 +96,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C87A46AD276FC627003928DA /* Build configuration list for PBXProject "UI Test" */;
+			buildConfigurationList = C87A46AD276FC627003928DA /* Build configuration list for PBXProject "Just Text" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -106,7 +109,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C87A46B1276FC627003928DA /* UI Test */,
+				C87A46B1276FC627003928DA /* JustText */,
 			);
 		};
 /* End PBXProject section */
@@ -116,8 +119,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C87A46B8276FC629003928DA /* Assets.xcassets in Resources */,
-				C87A46BB276FC629003928DA /* MainMenu.xib in Resources */,
+				C8262C7A2785122800491CBE /* Markdown Tool.app in Resources */,
+				C87A46D1276FF02E003928DA /* Assets.xcassets in Resources */,
+				C87A46D2276FF02E003928DA /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,17 +132,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C87A46B6276FC627003928DA /* AppDelegate.swift in Sources */,
+				C87A46D3276FF02E003928DA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C87A46B9276FC629003928DA /* MainMenu.xib */ = {
+		C87A46CD276FF02E003928DA /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C87A46BA276FC629003928DA /* Base */,
+				C87A46CE276FF02E003928DA /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -266,13 +270,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "UI Test/UI_Test.entitlements";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = JustText/JustText.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3B2AVCLYD8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -280,9 +287,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Dante.UI-Test";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dante.JustText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -293,13 +301,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "UI Test/UI_Test.entitlements";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = JustText/JustText.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3B2AVCLYD8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -307,8 +318,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Dante.UI-Test";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dante.JustText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C87A46AD276FC627003928DA /* Build configuration list for PBXProject "UI Test" */ = {
+		C87A46AD276FC627003928DA /* Build configuration list for PBXProject "Just Text" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C87A46BD276FC629003928DA /* Debug */,
@@ -327,7 +338,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C87A46BF276FC629003928DA /* Build configuration list for PBXNativeTarget "UI Test" */ = {
+		C87A46BF276FC629003928DA /* Build configuration list for PBXNativeTarget "JustText" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C87A46C0276FC629003928DA /* Debug */,
