@@ -96,7 +96,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C87A46AD276FC627003928DA /* Build configuration list for PBXProject "Just Text" */;
+			buildConfigurationList = C87A46AD276FC627003928DA /* Build configuration list for PBXProject "JustText" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -329,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C87A46AD276FC627003928DA /* Build configuration list for PBXProject "Just Text" */ = {
+		C87A46AD276FC627003928DA /* Build configuration list for PBXProject "JustText" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C87A46BD276FC629003928DA /* Debug */,
