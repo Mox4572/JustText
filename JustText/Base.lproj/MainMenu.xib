@@ -274,7 +274,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="minSize" width="388" height="388"/>
+                                    <size key="minSize" width="480" height="388"/>
                                     <size key="maxSize" width="480" height="10000000"/>
                                     <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <connections>
@@ -329,11 +329,11 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MzD-ch-3nT">
-                        <rect key="frame" x="10" y="27" width="280" height="392"/>
+                        <rect key="frame" x="10" y="27" width="280" height="420"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <textFieldCell key="cell" selectable="YES" id="Oge-YS-fTj">
                             <font key="font" size="12" name="SFMono-Regular"/>
-                            <string key="title">Um I don't code, none of this was created out of code, it was made with Xcode's Interface Builder which used to be it's own app, but Apple merged it with Xcode. Originally it came out on OpenStep, and then later Rhapsody(YAY! I LOVE Rhapsody!!!^-^) Later it was in Mac OS X in some version and then it was combined with Xcode, and it stayed like that in OS X, and it's still like that in macOS. Originally I only planed to mess with Interface Builder, but then I noticed that there was some text things that it looked like I could set up, One thing led to another, and here we are. Also the "Align" Toolbar buttons DO NOT work, I will probably tweak them some time later. Idk I'm not good with this stuff, I don't actaull know any code, I only know really well Figam. I think I'd be better off continueing Graphic Design than learning programing tbh. Also if you wan't to see what I make, go to https://macOSicons.com/U/Squid4572 . V2.0+ Should have code, courtesy the internet.</string>
+                            <mutableString key="title">Um I don't code, none of this was created out of code, it was made with Xcode's Interface Builder which used to be it's own app, but Apple merged it with Xcode. Originally it came out on OpenStep, and then later Rhapsody(YAY! I LOVE Rhapsody!!!^-^) Later it was in Mac OS X in some version and then it was combined with Xcode, and it stayed like that in OS X, and it's still like that in macOS. Originally I only planed to mess with Interface Builder, but then I noticed that there was some text things that it looked like I could set up, One thing led to another, and here we are. Also the "Align" Toolbar buttons DO NOT work, I will probably tweak them some time later. Idk I'm not good with this stuff, I don't actaull know any code, I only know really well Figam. I think I'd be better off continueing Graphic Design than learning programing tbh. Also if you wan't to see what I make, go to https://macOSicons.com/U/Squid4572 . Markdown Tool, Courtesy the internet. I made the text veiw light because a issue, I will change it back to dark for Darkmode when I fix the issue.</mutableString>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -428,17 +428,17 @@
                                     <action selector="orderFrontFontPanel:" target="YLy-65-1bz" id="shJ-qI-rc7"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Bold" tag="2" keyEquivalent="b" id="HFW-M2-jon">
+                            <menuItem title="Bold" tag="2" keyEquivalent="b" allowsKeyEquivalentWhenHidden="YES" id="HFW-M2-jon">
                                 <connections>
                                     <action selector="addFontTrait:" target="YLy-65-1bz" id="mUB-O6-hzj"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Italic" tag="1" keyEquivalent="i" id="apu-eX-M6e">
+                            <menuItem title="Italic" tag="1" keyEquivalent="i" allowsKeyEquivalentWhenHidden="YES" id="apu-eX-M6e">
                                 <connections>
                                     <action selector="addFontTrait:" target="YLy-65-1bz" id="sMS-SO-RO0"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Underline" keyEquivalent="u" id="meq-Sp-6uf">
+                            <menuItem title="Underline" keyEquivalent="u" allowsKeyEquivalentWhenHidden="YES" id="meq-Sp-6uf">
                                 <connections>
                                     <action selector="underline:" target="-1" id="yyy-V3-oSM"/>
                                 </connections>
@@ -649,16 +649,6 @@
                             </menuItem>
                         </items>
                     </menu>
-                </menuItem>
-                <menuItem isSeparatorItem="YES" id="17d-2i-ZJk"/>
-                <menuItem title="Item 1" id="FRn-oG-y3u">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem title="Item 2" id="TZ8-38-zhz">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem title="Item 3" id="t1y-hd-ta9">
-                    <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
             </items>
             <point key="canvasLocation" x="387" y="782"/>
