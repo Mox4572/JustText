@@ -37,7 +37,11 @@
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="1sC-f0-0Rz"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Open Markdown Tool" keyEquivalent="M" id="ohB-1a-Bho"/>
+                            <menuItem title="Open Markdown Tool" keyEquivalent="M" id="ohB-1a-Bho">
+                                <connections>
+                                    <action selector="openMarkdownTool:" target="Voe-Tx-rLC" id="WFG-fJ-Wav"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="Hide Application" keyEquivalent="h" id="uPR-su-8t9">
                                 <connections>
                                     <action selector="hide:" target="-1" id="QlP-S0-ucv"/>
@@ -257,7 +261,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="388"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1792" height="1095"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="388"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -274,7 +278,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="minSize" width="388" height="388"/>
+                                    <size key="minSize" width="480" height="388"/>
                                     <size key="maxSize" width="480" height="10000000"/>
                                     <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <connections>
@@ -323,7 +327,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="181" y="118" width="299" height="419"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1792" height="1095"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
             <view key="contentView" id="SwY-ls-YB7">
                 <rect key="frame" x="0.0" y="0.0" width="299" height="419"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -355,7 +359,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" texturedBackground="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="181" y="118" width="299" height="72"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1792" height="1095"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
             <view key="contentView" id="Ify-nG-ktj">
                 <rect key="frame" x="0.0" y="0.0" width="299" height="72"/>
                 <autoresizingMask key="autoresizingMask"/>
