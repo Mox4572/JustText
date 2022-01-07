@@ -356,7 +356,7 @@
             <point key="canvasLocation" x="635.5" y="408.5"/>
         </window>
         <window title="Sorry" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="zbS-hf-z98" customClass="NSPanel">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" texturedBackground="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="181" y="118" width="299" height="72"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1792" height="1095"/>
