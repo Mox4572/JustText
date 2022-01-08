@@ -271,7 +271,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" drawsBackground="NO" id="fSq-ox-PIa">
                             <rect key="frame" x="0.0" y="0.0" width="480" height="388"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textView focusRingType="none" verticallyResizable="YES" fieldEditor="YES" usesFontPanel="YES" usesInspectorBar="YES" findStyle="bar" continuousSpellChecking="YES" allowsDocumentBackgroundColorChange="YES" allowsUndo="YES" allowsImageEditing="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" linkDetection="YES" dataDetection="YES" dashSubstitution="YES" textReplacement="YES" spellingCorrection="YES" grammarChecking="YES" smartInsertDelete="YES" id="pTU-th-SfN">
                                     <rect key="frame" x="0.0" y="0.0" width="480" height="388"/>
@@ -326,34 +326,36 @@
         <window title="About" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="mlW-Ob-TOj" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="181" y="118" width="299" height="419"/>
+            <rect key="contentRect" x="150" y="500" width="299" height="411"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1792" height="1095"/>
+            <value key="minSize" type="size" width="299" height="419"/>
+            <value key="maxSize" type="size" width="299" height="419"/>
             <view key="contentView" id="SwY-ls-YB7">
-                <rect key="frame" x="0.0" y="0.0" width="299" height="419"/>
+                <rect key="frame" x="0.0" y="0.0" width="299" height="411"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MzD-ch-3nT">
-                        <rect key="frame" x="10" y="27" width="280" height="420"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                        <textFieldCell key="cell" selectable="YES" id="Oge-YS-fTj">
-                            <font key="font" size="12" name="SFMono-Regular"/>
-                            <string key="title">Um I don't code, none of this was created out of code, it was made with Xcode's Interface Builder which used to be it's own app, but Apple merged it with Xcode. Originally it came out on OpenStep, and then later Rhapsody(YAY! I LOVE Rhapsody!!!^-^) Later it was in Mac OS X in some version and then it was combined with Xcode, and it stayed like that in OS X, and it's still like that in macOS. Originally I only planed to mess with Interface Builder, but then I noticed that there was some text things that it looked like I could set up, One thing led to another, and here we are. Also the "Align" Toolbar buttons DO NOT work, I will probably tweak them some time later. Idk I'm not good with this stuff, I don't actaull know any code, I only know really well Figam. I think I'd be better off continueing Graphic Design than learning programing tbh. Also if you wan't to see what I make, go to https://macOSicons.com/U/Squid4572 . Markdown Tool, Courtesy the internet. I made the text veiw light because a issue, I will change it back to dark for Darkmode when I fix the issue.</string>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="trz-AT-0ba">
                         <rect key="frame" x="10" y="8" width="285" height="16"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Thank you for testing this app ig. Ihdk.˘\(;-;)/˘" id="cc3-5H-ETQ">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MzD-ch-3nT">
+                        <rect key="frame" x="10" y="32" width="280" height="379"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <textFieldCell key="cell" selectable="YES" id="Oge-YS-fTj">
+                            <font key="font" size="12" name="SFMono-Regular"/>
+                            <mutableString key="title">Um I don't code, none of this was created out of code, it was made with Xcode's Interface Builder which used to be it's own app, but Apple merged it with Xcode. Originally it came out on OpenStep, and then later Rhapsody(YAY! I LOVE Rhapsody!!!^-^) Later it was in Mac OS X in some version and then it was combined with Xcode, and it stayed like that in OS X, and it's still like that in macOS. Originally I only planed to mess with Interface Builder, but then I noticed that there was some text things that it looked like I could set up, One thing led to another, and here we are. Also the "Align" Toolbar buttons DO NOT work, I will probably tweak them some time later. Idk I'm not good with this stuff, I don't actaull know any code, I only know really well Figam. I think I'd be better off continueing Graphic Design than learning programing tbh. Also if you wan't to see what I make, go to https://macOSicons.com/U/Squid4572 . Markdown Tool, Courtesy the internet.</mutableString>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="635.5" y="408.5"/>
+            <point key="canvasLocation" x="635.5" y="404.5"/>
         </window>
         <window title="Sorry" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="zbS-hf-z98" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
@@ -655,7 +657,7 @@
                     </menu>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="387" y="782"/>
+            <point key="canvasLocation" x="386" y="745"/>
         </menu>
     </objects>
     <resources>

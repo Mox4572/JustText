@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C8262C7A2785122800491CBE /* Markdown Tool.app in Resources */ = {isa = PBXBuildFile; fileRef = C8262C792785122800491CBE /* Markdown Tool.app */; };
 		C87A46D1276FF02E003928DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C87A46CC276FF02E003928DA /* Assets.xcassets */; };
 		C87A46D2276FF02E003928DA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C87A46CD276FF02E003928DA /* MainMenu.xib */; };
 		C87A46D3276FF02E003928DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A46D0276FF02E003928DA /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C8262C792785122800491CBE /* Markdown Tool.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = "Markdown Tool.app"; sourceTree = "<group>"; };
 		C87A46B2276FC627003928DA /* JustText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87A46CC276FF02E003928DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C87A46CE276FF02E003928DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 				C87A46CD276FF02E003928DA /* MainMenu.xib */,
 				C87A46CF276FF02E003928DA /* JustText.entitlements */,
 				C87A46D0276FF02E003928DA /* AppDelegate.swift */,
-				C8262C792785122800491CBE /* Markdown Tool.app */,
 			);
 			path = JustText;
 			sourceTree = "<group>";
@@ -119,7 +116,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8262C7A2785122800491CBE /* Markdown Tool.app in Resources */,
 				C87A46D1276FF02E003928DA /* Assets.xcassets in Resources */,
 				C87A46D2276FF02E003928DA /* MainMenu.xib in Resources */,
 			);
