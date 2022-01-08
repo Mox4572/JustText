@@ -271,7 +271,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" drawsBackground="NO" id="fSq-ox-PIa">
                             <rect key="frame" x="0.0" y="0.0" width="480" height="388"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <textView focusRingType="none" verticallyResizable="YES" fieldEditor="YES" usesFontPanel="YES" usesInspectorBar="YES" findStyle="bar" continuousSpellChecking="YES" allowsDocumentBackgroundColorChange="YES" allowsUndo="YES" allowsImageEditing="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" linkDetection="YES" dataDetection="YES" dashSubstitution="YES" textReplacement="YES" spellingCorrection="YES" grammarChecking="YES" smartInsertDelete="YES" id="pTU-th-SfN">
                                     <rect key="frame" x="0.0" y="0.0" width="480" height="388"/>
