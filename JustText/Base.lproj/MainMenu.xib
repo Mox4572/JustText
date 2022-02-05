@@ -55,6 +55,69 @@
                         </items>
                     </menu>
                 </menuItem>
+                <menuItem title="File" id="NGh-jq-sqM">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="File" id="U5b-Su-PNs">
+                        <items>
+                            <menuItem title="New Window" keyEquivalent="n" id="mTh-iz-MeY">
+                                <connections>
+                                    <action selector="deminiaturize:" target="QvC-M9-y7g" id="AwN-qf-J6x"/>
+                                    <outlet property="window" destination="QvC-M9-y7g" id="iAj-8J-evJ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Open File" keyEquivalent="o" id="f8P-Pr-ZRN">
+                                <connections>
+                                    <action selector="openDocument:" target="-1" id="2gy-Pq-fWZ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Open Recently Open File" id="nyO-Pj-qRV">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Open Recently Open File" systemMenu="recentDocuments" id="lu6-SF-gOE">
+                                    <items>
+                                        <menuItem title="Clear Menu" id="QRJ-FJ-94K">
+                                            <connections>
+                                                <action selector="clearRecentDocuments:" target="-1" id="6lE-gV-rgy"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="pb0-lz-4LA"/>
+                            <menuItem title="Close Window" keyEquivalent="w" id="wcQ-x4-fPY">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="8Qe-rl-deC"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save Updated File" keyEquivalent="s" id="9bf-Ol-Dh3">
+                                <connections>
+                                    <action selector="saveDocument:" target="-1" id="rQH-Qx-AFv"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save As File" keyEquivalent="S" id="f8l-JV-lbQ">
+                                <connections>
+                                    <action selector="saveDocumentAs:" target="-1" id="mzd-Jd-8UA"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Revert to Saved File" id="7Pi-YQ-Qd0">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="revertDocumentToSaved:" target="-1" id="oc7-PM-dd8"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="Vmg-11-zQK"/>
+                            <menuItem title="Page Setup…" keyEquivalent="P" id="98L-Mc-oXI">
+                                <connections>
+                                    <action selector="runPageLayout:" target="-1" id="NBv-MX-9mr"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Print…" keyEquivalent="p" id="LwS-Jt-axT">
+                                <connections>
+                                    <action selector="print:" target="-1" id="8pZ-jY-FXh"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
                 <menuItem title="Edit" id="9WG-tk-ein">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Edit" id="ZNd-Oe-xbK">
@@ -255,7 +318,7 @@
                     </menu>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="62" y="125"/>
+            <point key="canvasLocation" x="81" y="125"/>
         </menu>
         <window title="Editor" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
@@ -662,7 +725,7 @@
     </objects>
     <resources>
         <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.14900000393390656" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

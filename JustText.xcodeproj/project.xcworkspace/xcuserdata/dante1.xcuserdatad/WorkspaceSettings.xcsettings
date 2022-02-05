@@ -5,15 +5,13 @@
 	<key>BuildLocationStyle</key>
 	<string>CustomLocation</string>
 	<key>CustomBuildIntermediatesPath</key>
-	<string>Build/Intermediates.noindex</string>
+	<string>/Users/Dante/Library/Developer/Xcode/DerivedData/Build/Intermediates.noindex</string>
 	<key>CustomBuildLocationType</key>
-	<string>RelativeToWorkspace</string>
+	<string>Absolute</string>
 	<key>CustomBuildProductsPath</key>
-	<string>Build/Products</string>
-	<key>DerivedDataCustomLocation</key>
-	<string>DerivedData</string>
+	<string>/Users/Dante/JustText/JustText/Build/Products</string>
 	<key>DerivedDataLocationStyle</key>
-	<string>WorkspaceRelativePath</string>
+	<string>Default</string>
 	<key>IssueFilterStyle</key>
 	<string>ShowActiveSchemeOnly</string>
 	<key>LiveSourceIssuesEnabled</key>
