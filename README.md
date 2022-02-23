@@ -2,6 +2,7 @@
 Just a Text editor. 🙃
 
 [![Xcode Build: Target: JustText](https://github.com/Squid4572/JustText/actions/workflows/xcode.yml/badge.svg)](https://github.com/Squid4572/JustText/actions/workflows/xcode.yml)
+
 [![Xcode Build: Target: JustText2](https://github.com/Squid4572/JustText/actions/workflows/xcode2.yml/badge.svg)](https://github.com/Squid4572/JustText/actions/workflows/xcode2.yml)
 
 
