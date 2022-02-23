@@ -15,7 +15,23 @@ class ViewController: NSViewController, NSTextViewDelegate {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func checkUpdates(_ sender: Any) {
+        // TODO
+        print("Not yet impl")
+        let alert = NSAlert()
+        alert.messageText = "Cannot Check for Updates"
+        alert.informativeText = "Please update manually from Github. Autoupdate has not yet been implemented."
+        alert.addButton(withTitle: "OK")
+        alert.runModal()
 
+    }
+    @IBAction func OpenGithub(_ sender: Any) {
+        let url = URL(string: "https://github.com/Squid4572/JustText")!
+        if NSWorkspace.shared.open(url) {
+            print("Browser Successfully opened")
+        }
+    }
+    
     override var representedObject: Any? {
         didSet {
             // Pass down the represented object to all of the child view controllers.

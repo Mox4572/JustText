@@ -318,7 +318,7 @@
                     </menu>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="81" y="125"/>
+            <point key="canvasLocation" x="89" y="16"/>
         </menu>
         <window title="Editor" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>

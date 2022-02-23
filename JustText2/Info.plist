@@ -16,6 +16,20 @@
 			<key>NSDocumentClass</key>
 			<string>$(PRODUCT_MODULE_NAME).Document</string>
 		</dict>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>JText</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Default</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.multiTouchFX.jtext</string>
+			</array>
+			<key>NSDocumentClass</key>
+			<string>DocumentJ</string>
+		</dict>
 	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
@@ -24,6 +38,14 @@
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
 			<string>public.plain-text</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLIconFile</key>
+			<string>jtext</string>
+			<key>CFBundleURLName</key>
+			<string>com.multiTouchFX.jtext</string>
 		</dict>
 	</array>
 	<key>UTImportedTypeDeclarations</key>
@@ -42,6 +64,30 @@
 				<key>public.filename-extension</key>
 				<array>
 					<string>exampletext</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.apple.rtfd</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>JText</string>
+			<key>UTTypeIconFile</key>
+			<string>jtext</string>
+			<key>UTTypeIcons</key>
+			<dict>
+				<key>UTTypeIconBadgeName</key>
+				<string>jtext</string>
+			</dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.multiTouchFX.jtext</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>jtext</string>
 				</array>
 			</dict>
 		</dict>
