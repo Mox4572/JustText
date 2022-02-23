@@ -1,5 +1,6 @@
 # JustText
 Just a Text editor. 🙃
+
 [![Xcode Build](https://github.com/Squid4572/JustText/actions/workflows/xcode.yml/badge.svg)](https://github.com/Squid4572/JustText/actions/workflows/xcode.yml)
 
 ![GitHub Banner](https://repository-images.githubusercontent.com/444603005/b88f983b-06ae-4405-82f7-265ecc17e8d5)
