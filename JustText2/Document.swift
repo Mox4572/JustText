@@ -2,7 +2,7 @@
 //  Document.swift
 //  JustText2
 //
-//  Created by Marc D. Nichitiu on 2/23/22.
+//  Created by MDNich on 2/23/22.
 //
 /*
 Abstract:

@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  JustText2
 //
-//  Created by Marc D. Nichitiu on 2/23/22.
+//  Created by MDNich on 2/23/22.
 //
 
 import Cocoa
@@ -11,7 +11,7 @@ class WelcomeViewController: NSViewController {
     static var isBeingShown: Bool = true
     override func viewDidLoad() {
         super.viewDidLoad()
-        let docCtrl = NSDocumentController.shared
+       // let docCtrl = NSDocumentController.shared
 //        docCtrl.closeAllDocuments(withDelegate: self, didCloseAllSelector: nil, contextInfo: nil)
         WelcomeViewController.isBeingShown = true
         
@@ -27,16 +27,17 @@ class WelcomeViewController: NSViewController {
     
     @IBAction func CreateNewDocAction(_ sender: Any) {
         let docCtrl = NSDocumentController.shared
-        docCtrl.newDocument(docCtrl)
         self.view.window?.close()
+        docCtrl.newDocument(docCtrl)
     }
     @IBAction func openDocAction(_ sender: Any) {
         let docCtrl = NSDocumentController.shared
-        docCtrl.openDocument(sender)
         self.view.window?.close()
+        docCtrl.openDocument(sender)
     }
     @IBAction func openPrefsAction(_ sender: Any) {
         self.view.window?.close()
+        // TODO Impl
     }
 }
 
