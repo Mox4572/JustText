@@ -8,9 +8,12 @@
 import Cocoa
 
 class WelcomeViewController: NSViewController {
+    static var isBeingShown: Bool = true
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let docCtrl = NSDocumentController.shared
+//        docCtrl.closeAllDocuments(withDelegate: self, didCloseAllSelector: nil, contextInfo: nil)
+        WelcomeViewController.isBeingShown = true
         
         // Do any additional setup after loading the view.
     }
@@ -19,15 +22,16 @@ class WelcomeViewController: NSViewController {
         }
     }
     override func viewWillDisappear() {
+        WelcomeViewController.isBeingShown = false
     }
     
     @IBAction func CreateNewDocAction(_ sender: Any) {
-        let docCtrl = NSDocumentController()
+        let docCtrl = NSDocumentController.shared
         docCtrl.newDocument(docCtrl)
         self.view.window?.close()
     }
     @IBAction func openDocAction(_ sender: Any) {
-        let docCtrl = NSDocumentController()
+        let docCtrl = NSDocumentController.shared
         docCtrl.openDocument(sender)
         self.view.window?.close()
     }
@@ -43,7 +47,9 @@ class ViewController: NSViewController, NSTextViewDelegate {
     @IBOutlet var textView: NSTextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if(WelcomeViewController.isBeingShown) {
+            self.view.window?.close() // dont exist if the other one is there
+        }
         // Do any additional setup after loading the view.
     }
     @IBAction func checkUpdates(_ sender: Any) {
