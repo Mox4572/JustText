@@ -732,9 +732,9 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lIK-q8-Dwj">
-                                <rect key="frame" x="154" y="235" width="104" height="15"/>
+                                <rect key="frame" x="154" y="235" width="105" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="truncatingTail" title="Version 1.0 (beta)" id="Ovf-1m-7uE">
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" title="Version 3.5 (beta)" id="Ovf-1m-7uE">
                                     <font key="font" metaFont="cellTitle"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
