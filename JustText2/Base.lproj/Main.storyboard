@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="oj8-oE-aAo">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -687,6 +688,206 @@
             <point key="canvasLocation" x="53" y="-326"/>
         </scene>
         <!--Window Controller-->
+        <scene sceneID="dgs-Bo-CjP">
+            <objects>
+                <windowController id="oj8-oE-aAo" sceneMemberID="viewController">
+                    <window key="window" title="Welcome!" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="IEZ-dn-Hwn" customClass="NSPanel">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES" fullSizeContentView="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="699" y="341" width="412" height="412"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1800" height="1125"/>
+                        <value key="minSize" type="size" width="412" height="412"/>
+                        <value key="maxSize" type="size" width="412" height="412"/>
+                        <view key="contentView" id="m9q-jc-hhC">
+                            <rect key="frame" x="0.0" y="0.0" width="412" height="412"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="oj8-oE-aAo" id="Cs2-pm-pgP"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="TC8-Cm-M12" kind="relationship" relationship="window.shadowedContentViewController" id="alo-K8-yXq"/>
+                    </connections>
+                </windowController>
+                <customObject id="Uso-7x-Sb2" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-869" y="-245"/>
+        </scene>
+        <!--Welcome!-->
+        <scene sceneID="YSa-Lw-wl4">
+            <objects>
+                <viewController title="Welcome!" id="TC8-Cm-M12" customClass="WelcomeViewController" customModule="JustText2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="nTg-5z-O65">
+                        <rect key="frame" x="0.0" y="0.0" width="413" height="413"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FLB-eg-qCQ">
+                                <rect key="frame" x="79" y="258" width="255" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" title="Welcome to JustText!" id="r2z-8A-IgY">
+                                    <font key="font" metaFont="systemBold" size="25"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lIK-q8-Dwj">
+                                <rect key="frame" x="154" y="235" width="104" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" title="Version 1.0 (beta)" id="Ovf-1m-7uE">
+                                    <font key="font" metaFont="system" size="12"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yzp-O4-wiT">
+                                <rect key="frame" x="263" y="338" width="4" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" id="QyS-46-lkc">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ge-Me-wdL">
+                                <rect key="frame" x="153" y="295" width="106" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Icon" id="BFn-0U-Rgo"/>
+                            </imageView>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zh1-H0-bjj">
+                                <rect key="frame" x="50" y="109" width="44" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="RXz-4S-yR9">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="3"/>
+                                    <imageReference key="image" image="doc.on.doc" catalog="system" symbolScale="default" renderingMode="hierarchical">
+                                        <hierarchicalColors>
+                                            <color name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                            <color name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openDocAction:" target="TC8-Cm-M12" id="bMJ-EE-XdI"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZk-u1-ZbG">
+                                <rect key="frame" x="47" y="49.5" width="50.5" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" enabled="NO" imageScaling="proportionallyUpOrDown" inset="2" id="eOC-dj-lEa">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="4"/>
+                                    <imageReference key="image" image="gear" catalog="system" symbolScale="default" renderingMode="hierarchical">
+                                        <hierarchicalColors>
+                                            <color name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                            <color name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openPrefsAction:" target="TC8-Cm-M12" id="IqW-Ti-Pe0"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Ec-YH-zgx">
+                                <rect key="frame" x="47" y="168.5" width="50" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="H5Q-a7-X1Y">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="3"/>
+                                    <imageReference key="image" image="plus.app" catalog="system" symbolScale="default" renderingMode="hierarchical">
+                                        <hierarchicalColors>
+                                            <color name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                            <color name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="CreateNewDocAction:" target="TC8-Cm-M12" id="xLC-5K-Y8S"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WHO-pZ-iqH">
+                                <rect key="frame" x="105" y="199" width="153" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Create new document" id="Uxe-gq-N1Z">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="CreateNewDocAction:" target="TC8-Cm-M12" id="g54-ya-BvB"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QVw-zK-6WB">
+                                <rect key="frame" x="103" y="140" width="181" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Open an existing document" id="g5a-G9-4dl">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="openDocAction:" target="TC8-Cm-M12" id="vRk-lq-wpU"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R5z-xs-t5u">
+                                <rect key="frame" x="103" y="84" width="127" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" title="Configure JustText" id="GMI-qy-gl7">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="openPrefsAction:" target="TC8-Cm-M12" id="jk0-U9-aRr"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Tp-3y-4Ae">
+                                <rect key="frame" x="105" y="181" width="237" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Either a plain text (txt) or JText (RTFD)" id="tdZ-XP-mFg">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="CreateNewDocAction:" target="TC8-Cm-M12" id="6vu-CP-jzT"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wfv-U9-gHP">
+                                <rect key="frame" x="103" y="122" width="237" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Either a plain text (txt) or JText (RTFD)" id="CYE-5R-0Z9">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="openDocAction:" target="TC8-Cm-M12" id="d91-xQ-maf"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X5t-xf-hvU">
+                                <rect key="frame" x="103" y="50" width="286" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" enabled="NO" title="Set preferences to your liking and enable or disable special features" id="YdL-we-5C5">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="openPrefsAction:" target="TC8-Cm-M12" id="LHl-Fa-hyk"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="HeU-pc-tso" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-868.5" y="346.5"/>
+        </scene>
+        <!--Window Controller-->
         <scene sceneID="MCh-ri-p62">
             <objects>
                 <windowController id="ucW-oX-oDo" sceneMemberID="viewController">
@@ -880,5 +1081,8 @@
         <image name="Icon" width="1024" height="1024"/>
         <image name="NSAdvanced" width="32" height="32"/>
         <image name="NSNetwork" width="32" height="32"/>
+        <image name="doc.on.doc" catalog="system" width="16" height="18"/>
+        <image name="gear" catalog="system" width="17" height="17"/>
+        <image name="plus.app" catalog="system" width="15" height="14"/>
     </resources>
 </document>

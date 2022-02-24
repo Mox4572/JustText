@@ -7,6 +7,37 @@
 
 import Cocoa
 
+class WelcomeViewController: NSViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        // Do any additional setup after loading the view.
+    }
+    override var representedObject: Any? {
+        didSet {
+        }
+    }
+    override func viewWillDisappear() {
+    }
+    
+    @IBAction func CreateNewDocAction(_ sender: Any) {
+        let docCtrl = NSDocumentController()
+        docCtrl.newDocument(docCtrl)
+        self.view.window?.close()
+    }
+    @IBAction func openDocAction(_ sender: Any) {
+        let docCtrl = NSDocumentController()
+        docCtrl.openDocument(sender)
+        self.view.window?.close()
+    }
+    @IBAction func openPrefsAction(_ sender: Any) {
+        self.view.window?.close()
+    }
+}
+
+
+
 class ViewController: NSViewController, NSTextViewDelegate {
 
     @IBOutlet var textView: NSTextView!
