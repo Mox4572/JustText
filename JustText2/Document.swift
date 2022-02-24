@@ -97,7 +97,6 @@ class Document: NSDocument {
     
     @IBAction override func printDocument(_ sender: Any?) {
         // Print the NSTextView.
-        
         // Create a copy to manipulate for printing.
         let pageSize = NSSize(width: (printInfo.paperSize.width), height: (printInfo.paperSize.height))
         let textView = NSTextView(frame: NSRect(x: 0.0, y: 0.0, width: pageSize.width, height: pageSize.height))

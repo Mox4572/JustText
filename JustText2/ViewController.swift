@@ -41,16 +41,65 @@ class WelcomeViewController: NSViewController {
     }
 }
 
-
+class EditorWindowController: NSWindowController {
+    override func windowDidLoad() {
+        super.windowDidLoad()
+        print("awake")
+        if(WelcomeViewController.isBeingShown) {
+            self.close() // dont exist if the other one is there
+            print("closed")
+        }
+        if(WelcomeViewController.isBeingShown) {
+            self.close() // dont exist if the other one is there
+            print("closed2")
+        }
+    }
+}
 
 class ViewController: NSViewController, NSTextViewDelegate {
 
     @IBOutlet var textView: NSTextView!
+    
+    static func shell(_ command: String) -> String {
+        let task = Process()
+        let pipe = Pipe()
+        
+        task.standardOutput = pipe
+        task.standardError = pipe
+        task.arguments = ["-c", command]
+        task.launchPath = "/bin/zsh"
+        task.launch()
+        
+        let data = pipe.fileHandleForReading.readDataToEndOfFile()
+        let output = String(data: data, encoding: .utf8)!
+        
+        return output
+    }
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("awake")
         if(WelcomeViewController.isBeingShown) {
             self.view.window?.close() // dont exist if the other one is there
+            print("closed")
         }
+        if(WelcomeViewController.isBeingShown) {
+            self.view.window?.close() // dont exist if the other one is there
+            print("closed2")
+        }
+        
+        ViewController.documentStatic = document ?? Document()
+        if(!ViewController.documentStatic.isEqual(to: document)) {
+            ViewController.documentStatic.content.contentString = textView.string
+            print("updated")
+        }
+        
+        
+        textView.font = NSFont(name: "Menlo", size: CGFloat(12.0))
+        ViewController.textViewStatic = textView
+        
         // Do any additional setup after loading the view.
     }
     @IBAction func checkUpdates(_ sender: Any) {
@@ -69,6 +118,14 @@ class ViewController: NSViewController, NSTextViewDelegate {
             print("Browser Successfully opened")
         }
     }
+    @IBAction func printDocument(_ sender: Any)
+    {
+       textView.appearance = NSAppearance(named: .aqua)
+       textView.printView(sender)
+       textView.appearance = NSAppearance(named: .darkAqua)
+    }
+    
+
     
     override var representedObject: Any? {
         didSet {
@@ -80,18 +137,32 @@ class ViewController: NSViewController, NSTextViewDelegate {
         }
     }
     
+    var printInfo = NSPrintInfo()
+    
     weak var document: Document? {
         if let docRepresentedObject = representedObject as? Document {
             return docRepresentedObject
         }
         return nil
     }
+    static var documentStatic = Document()
+    static var textViewStatic: NSTextView? = nil
+
     func textDidBeginEditing(_ notification: Notification) {
         document?.objectDidBeginEditing(self)
+        ViewController.documentStatic.content.contentString = textView.string
+
+    }
+    func textDidChange(_ notification: Notification) {
+        document?.objectDidBeginEditing(self)
+        ViewController.documentStatic.content.contentString = textView.string
+
     }
 
     func textDidEndEditing(_ notification: Notification) {
         document?.objectDidEndEditing(self)
+        ViewController.documentStatic.content.contentString = textView.string
+
     }
 
 

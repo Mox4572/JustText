@@ -6,6 +6,7 @@
 //
 
 import Cocoa
+import Foundation
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -22,6 +23,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationShouldTerminate(_ sender: NSApplication)-> NSApplication.TerminateReply {
         return .terminateNow
     }
+    @IBAction func printDocument(_ sender: Any?)
+    {
+        if let localViewCtrl = NSApplication.shared.mainWindow?.contentViewController as! ViewController? {
+            localViewCtrl.printDocument(sender)
+        }
+    }
+    
 
 
 

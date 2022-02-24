@@ -119,7 +119,7 @@
                                         </menuItem>
                                         <menuItem title="Print…" keyEquivalent="p" id="aTl-1u-JFS">
                                             <connections>
-                                                <action selector="print:" target="Ady-hI-5gd" id="qaZ-4w-aoO"/>
+                                                <action selector="printDocument:" target="Voe-Tx-rLC" id="s38-fX-TLP"/>
                                             </connections>
                                         </menuItem>
                                     </items>
@@ -690,7 +690,7 @@
         <!--Window Controller-->
         <scene sceneID="dgs-Bo-CjP">
             <objects>
-                <windowController id="oj8-oE-aAo" sceneMemberID="viewController">
+                <windowController showSeguePresentationStyle="single" id="oj8-oE-aAo" sceneMemberID="viewController">
                     <window key="window" title="Welcome!" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="IEZ-dn-Hwn" customClass="NSPanel">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -717,7 +717,7 @@
         <!--Welcome!-->
         <scene sceneID="YSa-Lw-wl4">
             <objects>
-                <viewController title="Welcome!" id="TC8-Cm-M12" customClass="WelcomeViewController" customModule="JustText2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Welcome!" showSeguePresentationStyle="single" id="TC8-Cm-M12" customClass="WelcomeViewController" customModule="JustText2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="nTg-5z-O65">
                         <rect key="frame" x="0.0" y="0.0" width="413" height="413"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -735,7 +735,7 @@
                                 <rect key="frame" x="154" y="235" width="104" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="truncatingTail" title="Version 1.0 (beta)" id="Ovf-1m-7uE">
-                                    <font key="font" metaFont="system" size="12"/>
+                                    <font key="font" metaFont="cellTitle"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -986,7 +986,7 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController storyboardIdentifier="Document Window Controller" id="jGA-0Y-lOj" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="Document Window Controller" id="jGA-0Y-lOj" customClass="EditorWindowController" customModule="JustText2" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="JustText Editor" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" toolbarStyle="unified" id="Ckk-yw-fiv">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -1033,13 +1033,22 @@
                                     <rect key="frame" x="0.0" y="0.0" width="465" height="270"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="bar" spellingCorrection="YES" smartInsertDelete="YES" id="YLv-A9-eQQ">
+                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="bar" usesRuler="YES" spellingCorrection="YES" smartInsertDelete="YES" id="YLv-A9-eQQ">
                                             <rect key="frame" x="0.0" y="0.0" width="465" height="270"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <size key="minSize" width="465" height="270"/>
                                             <size key="maxSize" width="480" height="10000000"/>
+                                            <attributedString key="textStorage">
+                                                <fragment content="Your document here">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="12" name="SFMono-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
                                                 <binding destination="5gI-5U-AMq" name="value" keyPath="representedObject.contentString" id="a8z-R8-EPp">
