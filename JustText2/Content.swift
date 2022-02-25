@@ -29,7 +29,6 @@ extension Content {
         contentString = String(bytes: data, encoding: .utf8)!
         print(contentString)
     }
-
     
     func data() -> Data? {
         print("givedata")
