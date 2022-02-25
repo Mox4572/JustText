@@ -75,6 +75,16 @@ class ViewController: NSViewController, NSTextViewDelegate {
         
         return output
     }
+    
+    override func viewDidAppear() {
+        // Fill the text view with the document's contents.
+        let document = self.view.window?.windowController?.document as! Document
+        if(document.isRTF) {
+            textView.textStorage?.setAttributedString(document.text)}
+        else {
+            textView.string = document.content.contentString // plain text impl
+        }
+    }
 
     
     
