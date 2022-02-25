@@ -151,7 +151,6 @@ class ViewController: NSViewController, NSTextViewDelegate {
     func textDidBeginEditing(_ notification: Notification) {
         document?.objectDidBeginEditing(self)
         ViewController.documentStatic.content.contentString = textView.string
-
     }
     func textDidChange(_ notification: Notification) {
         document?.objectDidBeginEditing(self)

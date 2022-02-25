@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -1027,58 +1028,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DL2-X6-WnH">
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmk-DX-jPL">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                                <clipView key="contentView" drawsBackground="NO" id="DpV-dd-nJr">
+                                <clipView key="contentView" drawsBackground="NO" id="vuh-2S-fsx">
                                     <rect key="frame" x="0.0" y="0.0" width="465" height="270"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="bar" usesRuler="YES" spellingCorrection="YES" smartInsertDelete="YES" id="YLv-A9-eQQ">
+                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" usesFontPanel="YES" usesInspectorBar="YES" findStyle="bar" incrementalSearchingEnabled="YES" usesRuler="YES" spellingCorrection="YES" smartInsertDelete="YES" id="lay-n2-ES7">
                                             <rect key="frame" x="0.0" y="0.0" width="465" height="270"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <size key="minSize" width="465" height="270"/>
                                             <size key="maxSize" width="480" height="10000000"/>
-                                            <attributedString key="textStorage">
-                                                <fragment content="Your document here">
-                                                    <attributes>
-                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="12" name="SFMono-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="insertionPointColor" name="AccentColor"/>
                                             <connections>
-                                                <binding destination="5gI-5U-AMq" name="value" keyPath="representedObject.contentString" id="a8z-R8-EPp">
-                                                    <dictionary key="options">
-                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
-                                                    </dictionary>
-                                                </binding>
+                                                <binding destination="5gI-5U-AMq" name="value" keyPath="representedObject.contentString" id="jPd-vg-lkH"/>
                                             </connections>
                                         </textView>
                                     </subviews>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="7CT-a7-0Yv">
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="9LZ-Xv-W0c">
                                     <rect key="frame" x="-100" y="-100" width="225" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="vv0-e9-gwf">
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="zDF-ZW-Wt4">
                                     <rect key="frame" x="465" y="0.0" width="15" height="270"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="DL2-X6-WnH" secondAttribute="trailing" id="4Ch-er-6ls"/>
-                            <constraint firstAttribute="bottom" secondItem="DL2-X6-WnH" secondAttribute="bottom" id="D64-D5-jAy"/>
-                            <constraint firstItem="DL2-X6-WnH" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" id="YWg-14-Pgg"/>
-                            <constraint firstItem="DL2-X6-WnH" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" id="ZHj-pv-HAa"/>
+                            <constraint firstAttribute="bottom" secondItem="Lmk-DX-jPL" secondAttribute="bottom" id="7fP-ty-D03"/>
+                            <constraint firstAttribute="trailing" secondItem="Lmk-DX-jPL" secondAttribute="trailing" id="AT6-KA-4R4"/>
+                            <constraint firstItem="Lmk-DX-jPL" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" id="UYg-WP-dnh"/>
+                            <constraint firstItem="Lmk-DX-jPL" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" id="zZc-1f-7va"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="textView" destination="YLv-A9-eQQ" id="JBx-fO-JFb"/>
+                        <outlet property="textView" destination="lay-n2-ES7" id="Rqm-si-Byn"/>
                     </connections>
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -1093,5 +1081,8 @@
         <image name="doc.on.doc" catalog="system" width="16" height="18"/>
         <image name="gear" catalog="system" width="17" height="17"/>
         <image name="plus.app" catalog="system" width="15" height="14"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.14900000393390656" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
