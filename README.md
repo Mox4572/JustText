@@ -17,7 +17,7 @@ Just a Text editor. 🙃
 
 "But I want to make something simple."
 
-"Nononsense per-say(I really hope I'm using that term correctly.)"
+"No-nonsense per-say."
 
 "I want something anyone can get."
 
