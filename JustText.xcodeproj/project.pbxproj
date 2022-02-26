@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5873515727C9A585009C019E /* DocumentOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5873515627C9A585009C019E /* DocumentOld.swift */; };
 		58D6AFC127C6CE5900ABE320 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D6AFC027C6CE5900ABE320 /* AppDelegate.swift */; };
 		58D6AFC327C6CE5900ABE320 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D6AFC227C6CE5900ABE320 /* ViewController.swift */; };
 		58D6AFC527C6CE5900ABE320 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D6AFC427C6CE5900ABE320 /* Document.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5873515627C9A585009C019E /* DocumentOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentOld.swift; sourceTree = "<group>"; };
 		58D6AFBE27C6CE5900ABE320 /* JustText2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustText2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D6AFC027C6CE5900ABE320 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D6AFC227C6CE5900ABE320 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				58D6AFC827C6CE5A00ABE320 /* Main.storyboard */,
 				58D6AFCB27C6CE5A00ABE320 /* Info.plist */,
 				58D6AFCC27C6CE5A00ABE320 /* JustText2.entitlements */,
+				5873515627C9A585009C019E /* DocumentOld.swift */,
 			);
 			path = JustText2;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5873515727C9A585009C019E /* DocumentOld.swift in Sources */,
 				58D6AFC327C6CE5900ABE320 /* ViewController.swift in Sources */,
 				58D6AFC127C6CE5900ABE320 /* AppDelegate.swift in Sources */,
 				58D6AFC527C6CE5900ABE320 /* Document.swift in Sources */,
